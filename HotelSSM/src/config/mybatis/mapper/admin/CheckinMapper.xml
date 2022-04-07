@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ischoolbar.programmer.dao.admin.CheckinDao">
+	<!-- 入住插入操作 -->
+	<insert id="add" parameterType="com.ischoolbar.programmer.entity.admin.Checkin">
+		insert into checkin(id,roomId,roomTypeId,checkinPrice,name,idCard,mobile,status,arriveDate,leaveDate,createTime,bookOrderId,remark) values(null,#{roomId},#{roomTypeId},#{checkinPrice},#{name},#{idCard},#{mobile},#{status},#{arriveDate},#{leaveDate},#{createTime},#{bookOrderId},#{remark})
+	</insert>
+	<!-- 入住编辑操作 -->
+	<update id="edit" parameterType="com.ischoolbar.programmer.entity.admin.Checkin">
+		update checkin set roomId = #{roomId},roomTypeId = #{roomTypeId},checkinPrice = #{checkinPrice},name = #{name},arriveDate = #{arriveDate},leaveDate = #{leaveDate},idCard = #{idCard},mobile = #{mobile},status = #{status},remark = #{remark} where id = #{id}
+	</update>
+	<!-- 入住信息搜索查询 -->
+	<select id="findList" parameterType="Map" resultType="com.ischoolbar.programmer.entity.admin.Checkin">
+		select * from checkin where 1 = 1 
+		<if test="name != null">
+			and name like '%${name}%' 
+		</if>
+		<if test="status != null">
+			and status = #{status}  
+		</if>
+		<if test="roomId != null">
+			and roomId = #{roomId}  
+		</if>
+		<if test="roomTypeId != null">
+			and roomTypeId = #{roomTypeId}  
+		</if>
+		<if test="idCard != null">
+			and idCard like '%${idCard}%' 
+		</if>
+		<if test="mobile != null">
+			and mobile like '%${mobile}%' 
+		</if>
+		<if test="offset != null and pageSize != null">
+			limit #{offset},#{pageSize}
+		</if>
+	</select>
+	<!-- 获取单个入住信息 -->
+	<select id="find" parameterType="Long" resultType="com.ischoolbar.programmer.entity.admin.Checkin">
+		select * from checkin where id = #{value}
+	</select>
+	<!-- 模糊搜索总条数 -->
+	<select id="getTotal" parameterType="Map" resultType="Integer">
+		select count(*) from book_order where 1=1  
+		<if test="name != null">
+			and name like '%${name}%' 
+		</if>
+		<if test="status != null">
+			and status = #{status}  
+		</if>
+		<if test="roomId != null">
+			and roomId = #{roomId}  
+		</if>
+		<if test="roomTypeId != null">
+			and roomTypeId = #{roomTypeId}  
+		</if>
+		<if test="idCard != null">
+			and idCard like '%${idCard}%' 
+		</if>
+		<if test="mobile != null">
+			and mobile like '%${mobile}%' 
+		</if>
+	</select>
+	<!-- 删除入住信息 -->
+	<delete id="delete" parameterType="Long">
+		delete from checkin where id = ${value}
+	</delete>
+	<!-- 按月获取统计信息 -->
+	<select id="getStatsByMonth" resultType="Map">
+		select sum(checkinPrice) as money,DATE_FORMAT(createTime,'%Y-%m') as stats_date from checkin GROUP BY DATE_FORMAT(createTime,'%Y-%m')
+	</select>
+	<!-- 按日获取统计信息 -->
+	<select id="getStatsByDay" resultType="Map">
+		select sum(checkinPrice) as money,DATE_FORMAT(createTime,'%Y-%m-%d') as stats_date from checkin GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d')
+	</select>
+</mapper>

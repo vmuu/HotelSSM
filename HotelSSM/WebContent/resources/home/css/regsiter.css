@@ -1,0 +1,58 @@
+ .panel {
+          float: left;
+    min-height: 100px;
+    padding: 1.2em .6em;
+    }
+    .form-group {
+      margin-bottom:18px;
+    }
+    .form-group > label {
+     display: inline-block;
+    width: 100px;
+    text-align: right;
+    }
+    .form-group > input {
+      width: 250px;
+      height:28px;
+      padding: 4px;
+      border-radius: 2px;
+      border: 1px solid #aaa;
+    }
+    .form-group > span {
+      width: 270px;
+      color: #fff;
+      padding: 4px;
+      border-radius: 2px;;
+    }
+ .form-group .msg-default {
+    color: #999;
+    }
+   .form-group .msg-error {
+     color: #d00;
+    }
+ .form-group  .msg-success {
+     color: #0d0;
+    }
+    .hidden {
+      display: none;
+    }
+    input[type="button"] {
+      background: #DD4C40;
+      width: 260px;
+      height:32px;
+      color: #fff;
+      font-size:16px;
+    }
+    .form-group .btn_default{
+      background: rgba(221, 76, 64, 0.46);
+    }
+    .login{
+        width:226px;
+        height: 118px;
+        line-height: 118px;
+        padding-left: 46px;
+        background: url("../images/m-5.jpg") no-repeat ;
+    }
+    .login a{
+        color: #DD4C40;
+    }

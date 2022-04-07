@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ischoolbar.programmer.dao.admin.FloorDao">
+	<!-- 楼层插入操作 -->
+	<insert id="add" parameterType="com.ischoolbar.programmer.entity.admin.Floor">
+		insert into floor(id,name,remark) values(null,#{name},#{remark})
+	</insert>
+	<!-- 楼层编辑操作 -->
+	<update id="edit" parameterType="com.ischoolbar.programmer.entity.admin.Floor">
+		update floor set name = #{name},remark = #{remark} where id = #{id}
+	</update>
+	<!-- 楼层信息搜索查询 -->
+	<select id="findList" parameterType="Map" resultType="com.ischoolbar.programmer.entity.admin.Floor">
+		select * from floor 
+		<if test="name != null">
+			where name like '%${name}%' 
+		</if>
+		<if test="offset != null and pageSize != null">
+			limit #{offset},#{pageSize}
+		</if>
+	</select>
+	<!-- 获取所有楼层信息 -->
+	<select id="findAll" parameterType="Map" resultType="com.ischoolbar.programmer.entity.admin.Floor">
+		select * from floor
+	</select>
+	<!-- 模糊搜索总条数 -->
+	<select id="getTotal" parameterType="Map" resultType="Integer">
+		select count(*) from floor 
+		<if test="name != null">
+			where name like '%${name}%' 
+		</if>
+	</select>
+	<!-- 删除楼层信息 -->
+	<delete id="delete" parameterType="Long">
+		delete from floor where id = ${value}
+	</delete>
+</mapper>

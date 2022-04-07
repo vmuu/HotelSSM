@@ -1,0 +1,402 @@
+/*测试样式*/
+div:after{
+  content:'' ;
+  display:block;
+  clear:both;
+
+}
+img{
+   vertical-align:middle;
+}
+#nav>div>ul.the_nav>li #sub_box{
+  z-index:100;
+}
+#subject{
+  width:1200px;
+  margin:0 auto;
+  border:1px solid #ddd;
+  position:relative;
+}
+#subject>ul.shade_mag{
+  position:absolute;
+  bottom:0;
+  left:498px;
+}
+#subject>ul.shade_mag>li{
+    float: left;
+    width: 136px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+}
+#subject>ul.shade_mag>li.hover{
+    background:#DD4C40;
+}
+#subject>ul.shade_mag>li>a{
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #fff;
+}
+/*预订框*/
+#subject>div.schedule_box{
+  position:absolute;
+  z-index:10;
+  top:50px;
+  left:74px;
+  background:rgba(218,223,219,0.6);
+  width:300px;
+}
+#subject>div.schedule_box>p{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 24px;
+    background: #DD4C40;
+}
+/*列表*/
+#subject>div.schedule_box>ul>li{
+    width: 80%;
+    height: 40px;
+    margin: 20px auto;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+#subject>div.schedule_box>ul>li>span{
+   display:block;
+   float:left;
+   width:24px;
+   height:20px;
+   margin: 9px 8px;
+   background:url(../images/hotel/dateIco.png) no-repeat;
+}
+#subject>div.schedule_box>ul>li>a{
+   display: block;
+    width: 100%;
+    height: 100%;
+    background: #DD4C40;
+    color: #fff;
+    font-size: 23px;
+  
+}
+#subject>div.schedule_box>ul>li>input{
+  float:left;
+  width:200px;
+  height:38px;
+  padding:0 2px;
+  font-size:18px;
+  border:none;
+  box-sizing:border-box;
+}
+/*关于我们*/
+div.about{
+   margin:10px 0;
+   overflow:hidden;
+}
+div.about>div{
+    float: left;
+    margin: 10px 0;
+    background: #E9ECE9;
+    width: 600px;
+    height: 366px;
+    padding: 5px 20px;
+    text-align: left;
+    line-height: 30px;
+}
+div.about>div>p{
+    color:rgba(221,76,64,0.7);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+/*列表框*/
+div.about>dl{
+   float:left;
+   height: 366px;
+   width:270px;
+   border:1px solid #ddd;
+   margin: 10px 0 0 28px;
+}
+div.about>dl.core2{
+  margin-right:0;
+}
+div.about>dl>dt{
+    height: 183px;
+	box-sizing:border-box;
+	padding:10px 0;
+    background: #F59C00;
+    line-height: 30px;
+    color: #fff;
+    text-align: center
+	
+}
+div.about>dl.core2>dt{
+    background:#9AC52D;
+}
+
+/*预约菜单*/
+#due_menu{
+   width:1200px;
+   margin:20px auto;;
+ 
+}
+ul.op>li{
+  width:200px;
+  height:40px;
+  background:#E9ECE9;
+}
+ul.op>li>a{
+  width:100%;
+  height:100%;
+}
+
+
+/*客房*/
+#guest_rooms{
+  margin:10px 0;
+  border:1px solid #ddd;
+}
+
+#guest_rooms>div.chioce{
+  padding:10px ;
+}
+#guest_rooms>div.chioce>input{
+  margin-right:10px;
+  height:26px;
+}
+#guest_rooms>div.chioce>input[type='button']{
+  text-align: center;
+  border:none;
+  background:#DD4C40;
+  color:#fff;
+  height:32px;
+  padding:5px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+
+}
+#guest_rooms>ul.op>li{
+    background: #fff;
+    border: 1px dashed #ddd;
+    border-top: 0;
+    text-align: center;
+	
+}
+/*客房预订*/
+#guest_rooms>ul.rooms_type{
+   width:100%;
+   border-top:3px solid #ddd;
+   overflow:hidden;
+}
+#guest_rooms>ul.rooms_type>li{
+      float: left;
+    width: 199px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #666;
+    font-weight: bold;
+   text-align: center;
+
+} 
+#room-list>li{
+  border-top:1px solid #ddd;
+  padding:20px 0;
+}
+#room-list>li>ul.room_detail{
+   overflow:hidden;
+   font-size:18px;
+   color:#000;
+}
+#room-list>li>ul.room_detail>li{
+  float:left;
+  width:199px;
+  line-height:148px;
+
+  text-align: center;
+}
+
+#room-list>li>ul.room_detail>li>a{
+  display:block;
+  position:relative;
+  margin:0 auto;
+}
+#room-list>li>ul.room_detail>li>a>img{
+  width:195px;
+  padding:10px;
+}
+#room-list>li>ul.room_detail>li p.sub_txt{
+  height: 30px;
+  color: #fff;
+  width: 97%;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+#room-list>li>ul.room_detail>li>p.sub_txt>a{
+  display: inline-block;
+  color:#fff;
+  font-size:16px;
+}
+#room-list>li>ul.room_detail>li>div.text{
+   padding:0 10px;
+}
+#room-list>li>ul.room_detail>li>input{
+  width:100px;
+  height:30px;
+  background:#DD4C40;
+  border:none;
+  color:#fff;
+  font-size:18px;
+  line-height:30px;
+  cursor: pointer;
+}
+
+#room-list>li>ul.room_detail>li>input:hover,#room-list>li>ul.room_detail>li>input.hover{
+   background:#DD4C40;
+   color:#fff;
+}
+#room-list>li>ul.room_detail>li>b{
+  color:#DD4C40;
+  font-weight:bold;
+}
+/*列表菜单*/
+#listbox{
+    width:230px;
+	margin:0 auto;
+	font-size:16px;
+}
+
+#listbox>ul{
+   float:left;
+}
+#listbox>ul>li{
+   float:left;
+   margin:0 10px;
+}
+#listbox>ul>li>a{
+  font-weight:bold;
+}
+#listbox>ul>li.current>a,#listbox>ul>li>a:hover{
+  color:#DD4C40;
+}
+#listbox>span{
+    float: left;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #625C5B;
+    border-radius: 50%;
+    line-height: 20px;
+	margin:0 10px;
+	cursor:pointer;
+}
+#listbox>span>b.left{
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 5px solid transparent;
+    border-right: 5px solid #625C5B;
+    margin: 5px 1px;
+}
+#listbox>span>b.right{
+ display: block;
+    width: 0px;
+    height: 0px;
+    border: 5px solid transparent;
+    border-left: 5px solid #625C5B;
+    margin: 5px 8px;
+}
+
+/**/
+#pages{
+  text-align: center;
+  margin: 10px 0;
+}
+#pages>a{
+   display:inline-block;
+   border:1px solid #D1D1D1;
+   padding:5px 10px;
+}
+#pages>a.active,#pages>a:hover{
+   background:#DD4C40;
+   color:#fff;
+}
+.booking_tab{
+  font-size:16px;
+  padding:5px;
+  /*border-bottom: 1px solid #ddd;*/
+}
+.booking_tab>span{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  margin-right: 5px;
+  /*vertical-align: middle;*/
+  border-radius: 50%;
+  border:2px solid #DD4C40;
+}
+/*******/
+#pro_list{
+  text-align: center;
+  width:98%;
+  margin:0 auto;
+  border-collapse: collapse;
+}
+#pro_list thead{
+  background: #ddd;
+  line-height: 25px;
+}
+#pro_list>tbody td>input{
+  width:80px;
+  height:30px;
+  background:#DD4C40;
+  border:none;
+  color:#fff;
+  font-size:18px;
+  border-radius: 3px;
+  line-height:30px;
+  cursor: pointer;
+}
+#pro_list>tbody td>input.disable{
+  width:80px;
+  height:30px;
+  background:#c0c0c0;
+  border:none;
+  color:#fff;
+  font-size:18px;
+  border-radius: 3px;
+  line-height:30px;
+  cursor: pointer;
+}
+/*房态为空房的时候的背景颜色*/
+#pro_list>tbody td>input.disable{
+  background:#ababab;
+}
+
+#pro_list tbody td{
+  border:1px solid #ddd;
+  padding:10px;
+  border-top:0;
+}
+#pro_list tbody td img{
+    width:200px;
+    height:148px;
+}
+#pro_list tbody td:first-child{
+  border-left:0;
+}
+#pro_list tbody td:last-child{
+  border-right:0;
+}
+#pro_list tbody td b,#pro_list tbody td span{
+  color:#DD4C40;
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ischoolbar.programmer.dao.admin.RoomDao">
+	<!-- 房间插入操作 -->
+	<insert id="add" parameterType="com.ischoolbar.programmer.entity.admin.Room">
+		insert into room(id,photo,sn,roomTypeId,floorId,status,remark) values(null,#{photo},#{sn},#{roomTypeId},#{floorId},#{status},#{remark})
+	</insert>
+	<!-- 房间编辑操作 -->
+	<update id="edit" parameterType="com.ischoolbar.programmer.entity.admin.Room">
+		update room set photo = #{photo}, sn = #{sn},roomTypeId = #{roomTypeId},floorId = #{floorId},status = #{status},remark = #{remark} where id = #{id}
+	</update>
+	<!-- 房间信息搜索查询 -->
+	<select id="findList" parameterType="Map" resultType="com.ischoolbar.programmer.entity.admin.Room">
+		select * from room where 1 = 1 
+		<if test="roomTypeId != null">
+			and roomTypeId = #{roomTypeId}  
+		</if>
+		<if test="floorId != null">
+			and floorId = #{floorId}  
+		</if>
+		<if test="sn != null">
+			and sn like '%${sn}%'   
+		</if>
+		<if test="status != null">
+			and status = #{status}  
+		</if>
+		<if test="offset != null and pageSize != null">
+			limit #{offset},#{pageSize}
+		</if>
+	</select>
+	<!-- 获取所有房间信息 -->
+	<select id="findAll" parameterType="Map" resultType="com.ischoolbar.programmer.entity.admin.Room">
+		select * from room
+	</select>
+	<!-- 获取单个房间信息 -->
+	<select id="find" parameterType="Long" resultType="com.ischoolbar.programmer.entity.admin.Room">
+		select * from room where id = #{value}
+	</select>
+	<!-- 根据房间编号获取单个房间信息 -->
+	<select id="findBySn" parameterType="String" resultType="com.ischoolbar.programmer.entity.admin.Room">
+		select * from room where sn = #{value}
+	</select>
+	<!-- 模糊搜索总条数 -->
+	<select id="getTotal" parameterType="Map" resultType="Integer">
+		select count(*) from room where 1=1  
+		<if test="roomTypeId != null">
+			and roomTypeId = #{roomTypeId}  
+		</if>
+		<if test="floorId != null">
+			and floorId = #{floorId}  
+		</if>
+		<if test="sn != null">
+			and sn like '%${sn}%'   
+		</if>
+		<if test="status != null">
+			and status = #{status}  
+		</if>
+	</select>
+	<!-- 删除房间信息 -->
+	<delete id="delete" parameterType="Long">
+		delete from room where id = ${value}
+	</delete>
+</mapper>

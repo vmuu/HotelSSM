@@ -1,0 +1,360 @@
+
+
+header,section,footer{
+    width:1000px;
+	margin:10px auto;
+	
+}
+header{
+   overflow:hidden;
+}
+header div{
+   float:left;
+  
+}
+header div>span{
+   display:inline-block;
+   padding:10px;
+   font-size:24px;
+   border-left: 1px solid #ddd;
+}
+section{
+  clear:both;
+}
+section>div.left{
+   float:left;
+   
+}
+section>div.login{
+  float:left;
+  width:400px;
+  height:302px;
+  background:#9FA1A0;
+  position:relative;
+  color:#fff;
+  text-align:left;
+  padding:15px 45px;
+}
+section>div.login a{
+  color:#DD4C40;
+}
+section>div.login>span{
+ display:block;
+ width:40px;
+ height:36px;
+ background:url(../images/myelong_login.png) -287px -303px;
+ position:absolute;
+ right:0;
+ top:0;
+}
+section>div.login #check_box>input{
+  margin-right:10px;
+}
+section>div.login #nor_log{
+   margin:10px auto;
+   
+} 
+section>div.login #nor_log>li{
+  height:35px;
+  width:100%;
+  border:1px solid #ccc;
+  margin:10px auto;
+  text-align:left;
+  background:#fff;
+}
+section>div.login #nor_log input{
+  width:270px;
+  height:33px;
+  border:none;
+   box-sizing:border-box;
+   padding:2px 5px;
+   color:#000;
+   background:#fff;
+}
+section>div.login #nor_log>li>span.icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/myelong_login.png) no-repeat -107px -274px;
+    vertical-align: middle;
+}
+section>div.login #nor_log>li.pwd>span.icon{
+  background-position: -132px -274px;
+}
+section>div.login>div.log{
+  width:100%;
+  height:35px;
+  background:#DD4C40;
+  margin-bottom:10px ;
+  line-height:35px;
+  font-size:22px;
+  text-align:center;
+}
+/*记住我*/
+ section>div.login #normal>div.cookie{
+   width:100%;
+   margin:10px auto;
+   text-align:left;
+ }
+ section>div.login #normal>div.cookie>input{
+   float:left;
+ }
+section>div.login #normal>div.cookie>a{
+   float:right;
+ }
+/*验证码*/
+section>div.login #normal>div{
+  margin:10px 0;
+}
+section>div.login #normal>div.codes{
+ width:100%;
+ margin:10px auto;
+ line-height:35px;
+}
+section>div.login #normal>div.codes>input{
+  float:left;
+  width:120px;
+  height:32px;
+  border:1px solid #DD4C40;
+  margin-right:10px;
+  padding:0 2px;
+   color:#000;
+}
+section>div.login #normal>div.codes>img{
+ vertical-align: middle;
+  margin-top: -6px;
+
+}
+section>div.login #normal>div.codes>a{
+ float:right;
+}
+/*其他账号登录*/
+section>div.login>div.other{
+  width:100%;
+}
+section>div.login>div.other>a{
+  margin: 0 5px;
+  color:#DD4C40;
+}
+/*立即注册*/
+section>div.reg>a{
+   float:right;
+   margin:10px 0;
+}
+/*手机电话登录*/
+#phone_login{
+    padding:10px 0;
+}
+#phone_login>div.phone{
+      margin-bottom:10px ;
+}
+#phone_login>div.phone>div{
+      float:left;
+}
+#phone_login>div.phone>div{
+      border:1px solid #ddd;
+	  height:35px;
+	  margin:0 10px 0 0;
+	  padding:0 2px ;
+	  line-height:35px;
+	  background:#fff;
+	  color:#131313;
+}
+#phone_login>div.phone>div>span{
+      float:right;
+	  width:26px;
+	  height:32px;
+	  background:url(../images/midify_tel.png) -10px 0;
+ 
+}
+#phone_login>div.phone>div>span.hover{
+    background-position:-10px -42px;
+}
+#phone_login>div.phone>input{
+      height:35px;
+	  width:185px;
+	  border:1px solid #ddd;
+	   box-sizing:border-box;
+}
+/*动态密码*/
+#phone_login>div.pwd{
+   margin:5px 0;
+}
+#phone_login>div.pwd>input{
+    width:169px;
+	height:32px;
+	float:left;
+}
+#phone_login>div.pwd>div{
+  float:left;
+  width:121px;
+  height:35px;
+  line-height:35px;
+  background:#DD4C40;
+  border-radius:2px;
+  text-align:center;
+  margin-left:15px;
+ 
+}
+#phone_login>input{
+  margin:10px 5px 10px 0;
+  vertical-align:middle;
+ 
+}
+#phone_login input{
+ color:#B5BCC5;
+}
+/**普通登录**/
+section #phone_login{
+  display:none;
+}
+/*底部*/
+
+footer{
+   padding:30px;
+}
+footer>p.signs>a{
+    margin:10px;
+}
+footer>p>a>span{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  margin:10px 0;
+  background: url(../images/myelong_login.png) no-repeat -0 -277px;
+  vertical-align: middle;
+  margin-right:5px;
+}
+footer>p>a.android>span{
+  background-position:-25px -277px;
+}
+footer>p>a.windows>span{
+  background-position:-50px -277px;
+}
+footer>p>a.phone>span{
+  background-position:-75px -277px;
+}
+footer>p{
+  text-align:center;
+}
+
+/*提示框*/
+p#alert{
+   background:#fff;
+   border:1px solid #DD4C40;
+   color:#DD4C40;
+   padding:1px 5px;
+   font-size:12px;
+}
+
+/*注册页面*/
+  div#reg{
+    width: 100%;
+    padding:10px 0;
+	font-size:18px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+   
+  }
+  div.msg{
+     /*background:#D4D6D3;*/
+	 width:1000px;
+    margin:0 auto;
+	padding:20px;
+  }
+ ul#forms{
+     float:left;
+     margin:0 auto;
+	 width:700px;
+  }
+ul#forms li{
+   margin:10px;
+
+}
+ul#forms li>span{
+  display: inline-block;
+  width:150px;
+  text-align: right;
+  margin-right:10px;
+
+}
+ul#forms li>span>b{
+   color:red;
+
+}
+ul#forms li>input{
+  height:32px;
+  width:270px;
+  margin-right:10px;
+  border:1px solid #ccc;
+  padding:0 5px; 
+}
+ul#forms li>input[name='code']{
+width:100px;
+}
+/*验证码*/
+ul#forms li>canvas{
+  display:inline-block;
+  vertical-align:middle;
+  width:100px;
+  height:32px;
+  border:1px solid #ccc;
+}
+ul#forms li>input[type='checkbox']{
+   width:15px;
+   height:15px;
+   vertical-align:middle;
+ }
+ul#forms li>div{
+   display:inline-block;
+   height:32px;
+   width:150px;
+   border:1px solid #CCCCCC;
+   background:#fff;
+   vertical-align:middle;
+}
+/*立即注册*/
+input#bt_goin{
+    background:#DD4C40;
+    color:#fff;
+	font-size:20px;
+	font-weight:bold;
+	border:none;
+}
+.error{
+  color:#DD4C40;
+  width:100px;
+  height:32px;
+  font-size:18px;
+}
+
+#ad{
+   padding:10px;
+   float:right;
+   width:260px;
+}
+#ad img{
+  width:240px;
+}
+#ad>p{
+  color:#DD4C40;
+  margin-bottom:10px;
+}
+#ad>ul{
+   margin:10px 10px 22px 10px;
+}
+#ad>ul>li{
+   line-height:32px;
+}
+
+#ad>ul>li>b{
+    display:inline-block;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background:#DD4C40;
+	color:#fff;
+	text-align:center;
+	line-height:20px;
+	margin-right:10px;
+}
