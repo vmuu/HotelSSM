@@ -14,7 +14,7 @@
 
 ##### 涉及技术
 
-Spring、SpringMVC、Mybatis、MySql、easyui、h-ui、Jsp、echars
+Spring、Mybatis、MySql、easyui、h-ui、Jsp、echars
 
 ### 项目介绍
 
