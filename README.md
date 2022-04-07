@@ -48,59 +48,59 @@ Spring、SpringMVC、Mybatis、MySql、easyui、h-ui、Jsp、echars
 
 ##### 1、首页
 
-![灵悟_酒店管理系统首页](E:/Administrator/Desktop/%E7%81%B5%E6%82%9F_%E9%85%92%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5.png)
+![灵悟_酒店管理系统首页](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640941.png)
 
 ##### 2、用户登录
 
-![image-20220407160427887](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160427887.png)
+![image-20220407160427887](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640942.png)
 
 ##### 3、用户注册
 
-![image-20220407160521462](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160521462.png)
+![image-20220407160521462](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640943.png)
 
 ##### 4、用户中心
 
-![image-20220407160342984](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160342984.png)
+![image-20220407160342984](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640944.png)
 
 ##### 5、登录后台
 
-![image-20220407160558543](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160558543.png)
+![image-20220407160558543](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640945.png)
 
 ##### 6、后台首页
 
-![image-20220407160635642](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160635642.png)
+![image-20220407160635642](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640947.png)
 
 ##### 7、用户管理
 
-![image-20220407160723319](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160723319.png)
+![image-20220407160723319](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640948.png)
 
 ##### 8、日志管理
 
-![image-20220407160803078](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160803078.png)
+![image-20220407160803078](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640949.png)
 
 ##### 9、楼层管理
 
-![image-20220407160834735](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160834735.png)
+![image-20220407160834735](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640950.png)
 
 ##### 10、房型管理
 
-![image-20220407160919314](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160919314.png)
+![image-20220407160919314](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640951.png)
 
 ##### 11、房间管理
 
-![image-20220407160949033](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407160949033.png)
+![image-20220407160949033](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640952.png)
 
 ##### 12、客户管理
 
-![image-20220407161016771](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407161016771.png)
+![image-20220407161016771](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640953.png)
 
 ##### 13、预订管理
 
-![image-20220407161047447](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407161047447.png)
+![image-20220407161047447](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640954.png)
 
 ##### 14、入住管理
 
-![image-20220407161108477](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20220407161108477.png)
+![image-20220407161108477](https://raw.githubusercontent.com/vmuu/img/main/img/HotelSSM/202204071640955.png)
 
 ### 安装步骤
 
