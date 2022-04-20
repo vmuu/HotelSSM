@@ -4,6 +4,10 @@
 
 [hotelssm.tcjy520.com](http://hotelssm.tcjy520.com/)
 
+项目地址：
+github：https://github.com/vmuu/HotelSSM/
+gitee：https://gitee.com/vmu/HotelSSM/
+
 ### 基础环境
 
 ##### 搭建环境
